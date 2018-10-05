@@ -9,3 +9,7 @@ npm-debug.log
 
 #api key
 .env
+
+#api key alag
+/src/components
+creds.js
