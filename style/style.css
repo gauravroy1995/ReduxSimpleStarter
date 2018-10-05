@@ -6,6 +6,24 @@
   width: 75%;
 }
 
-.video-list :hover {
+.video-detail .details {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.list-group-item :hover {
   background-color: aqua;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.embed-responsive-item {
+  position: relative;
+  align-content: right;
+  margin: 30px;
+  margin-left: 100px;
 }

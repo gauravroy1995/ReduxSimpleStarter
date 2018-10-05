@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import _ from "lodash";
 import YTSearch from "youtube-api-search";
 import SearchBar from "./components/search_bar";
 import VideoList from "./components/video_list";
 import VideoDetails from "./components/video_details";
-import API_K from "./components/creds";
-const API_KEY = { API_K };
-
+//import API_K from "./components/creds";
+const API_KEY = "";
+// API_KEY = `$(API_K)`;
 class App extends Component {
   constructor(props) {
     super(props);
@@ -19,9 +20,13 @@ class App extends Component {
     });
   }
   render() {
+    const videoSearch = _.debounce(term => {
+      this.videoSearch(term);
+    }, 300);
     return (
       <div>
-        <SearchBar onSearchTermChange={this.videoSearch} />
+        <h1>GTUBE</h1>
+        <SearchBar onSearchTermChange={videoSearch} />
         <VideoDetails video={this.state.selectedVideo} />
         <VideoList
           onVideoSelect={selectedVideo => this.setState({ selectedVideo })}

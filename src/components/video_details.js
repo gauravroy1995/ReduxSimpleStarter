@@ -9,8 +9,6 @@ const VideoDetails = props => {
   const url = `https://www.youtube.com/embed/${videoId}`;
   return (
     <div className="video-detail col-md-8">
-      console.log(
-      {url})
       <div>
         <iframe
           width="700px"
