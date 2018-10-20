@@ -11,8 +11,8 @@ const VideoDetails = props => {
     <div className="video-detail col-md-8">
       <div>
         <iframe
-          width="700px"
-          height="450px"
+          width="900px"
+          height="500px"
           className="embed-responsive-item"
           src={url}
         />

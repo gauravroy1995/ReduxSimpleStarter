@@ -5,8 +5,8 @@ import YTSearch from "youtube-api-search";
 import SearchBar from "./components/search_bar";
 import VideoList from "./components/video_list";
 import VideoDetails from "./components/video_details";
-//import API_K from "./components/creds";
-const API_KEY = "";
+import API_K from "./components/creds";
+const API_KEY = API_K.API_KEY;
 // API_KEY = `$(API_K)`;
 class App extends Component {
   constructor(props) {
@@ -25,13 +25,15 @@ class App extends Component {
     }, 300);
     return (
       <div>
-        <h1>GTUBE</h1>
+        <h1 id="tub">GTUBE</h1>
         <SearchBar onSearchTermChange={videoSearch} />
         <VideoDetails video={this.state.selectedVideo} />
+        <h1>Video-List</h1>
         <VideoList
           onVideoSelect={selectedVideo => this.setState({ selectedVideo })}
           videos={this.state.videos}
         />
+        <footer className="footer">Gaurav Roy</footer>
       </div>
     );
   }

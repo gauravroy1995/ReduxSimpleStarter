@@ -5,7 +5,12 @@
   "main": "index.js",
   "homepage": "https://gauravroy1995.github.io/ReduxSimpleStarter/",
   "repository": "https://github.com/gauravroy1995/ReduxSimpleStarter.git",
+  "engines": {
+    "node": "8.11.4",
+    "npm": "5.6.0"
+  },
   "scripts": {
+    "build": "webpack",
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

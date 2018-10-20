@@ -27,3 +27,19 @@
   margin: 30px;
   margin-left: 100px;
 }
+
+#tub {
+  position: absolute;
+  left: 40px;
+}
+
+.footer {
+  position: fixed;
+  right: 50px;
+  bottom: 80px;
+}
+
+.video-detail {
+  position: absolute;
+  left: -20px;
+}
