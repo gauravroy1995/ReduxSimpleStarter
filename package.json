@@ -7,7 +7,8 @@
   "repository": "https://github.com/gauravroy1995/ReduxSimpleStarter.git",
   "engines": {
     "node": "8.11.4",
-    "npm": "5.6.0"
+    "npm": "5.6.0",
+    "webpack": "4.21.0"
   },
   "scripts": {
     "build": "webpack",
